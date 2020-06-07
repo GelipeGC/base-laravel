@@ -1,27 +1,28 @@
 sudo: required
 language: php
 dist: trusty
-
 php:
-  - 7.2
-
+- 7.2
 services:
-  - mysql
-
+- mysql
 before_script:
-  - cp .env.travis .env
-  - mysql -e 'create database base_tests;'
-  - composer self-update
-  - composer install --no-interaction
-  - php artisan key:generate
-  - php artisan migrate --seed
-
+- cp .env.travis .env
+- mysql -e 'create database base_tests;'
+- composer self-update
+- composer install --no-interaction
+- php artisan key:generate
+- php artisan migrate --seed
 script:
-  - vendor/bin/phpunit
-
+- vendor/bin/phpunit
+deploy:
+  provider: heroku
+  api_key:
+    secure: T8jJS5nKDOp8fGb5NMpsiEzmixGLfnlLKr2D3XIWVR2PMsQFrdoJPUJlhgLTZERx2VIThkT/UMdTsgH+6t8f5DkHT9iHZIZw4LqTfPj3Mo0g86BNkaAlgNHyLAVAhiz0kWa1CiPI1qNIEXOic9WQNOiR+8KxFCUnttJJScq+ZdGYeqrAv6MCkjXkVBEIcAKsStPhE3kCCWxB9gE7B/IFcyZarBEHQcVb20cwRNUyd50CFCdpjeGhqMHNfGPOqK/cWq7/U0L2BlG830aZMzC+sXabtLYQzWFojdsmHmf6oz2Bm/GPquKKqn7wyAKV5NcNUjijwBuZdnM3385e1X0SdEIdgFPOFUlmSIEbwQJNIm40dorfaMKsjmd0/1VYH0J1CjkNYanKov5Wgd4XXUUIgXsVWBTquVlDiJG9JQkWNG9/cEr8+SMud7cLsSl/BBbJbursu/i4qOJEGO0PfSiZUmHC/bBZ3N1pikufDf+GlkM5n6361ihbi/rgxQUB9aagV6Tfo7yrfdzYJQbP11rQulRwyzN7EGkXTbrunhFny7qVcBCsjGdCusSCvLrc168gMG675eAC2FvQVuyxiAzc7PydqLOsP+jAR5idfJYfqPtITZm+nIQ8khKzyAxtssv3M/LWtYnnakU+gTmVeWeZjAhWYnR1D8VMMP3Tw3+tTSM=
+  app: laravue-es
+  on: master
 notifications:
   email:
     recipients:
-      - felipe-guzman.c@hotmail.com
+    - felipe-guzman.c@hotmail.com
     on-success: always
     on-failure: always

@@ -1,7 +1,16 @@
 {
-    "/js/lang-zh-CN.3dd053b8ca62f05cb7f9.js": "/js/lang-zh-CN.3dd053b8ca62f05cb7f9.js",
-    "/js/lang-es.280b59e794c834e27d4e.js": "/js/lang-es.280b59e794c834e27d4e.js",
-    "/js/lang-en.a7837681e2ae18fd6833.js": "/js/lang-en.a7837681e2ae18fd6833.js",
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/lang-zh-CN.40868b4fd72277e34ce8.js": "/js/lang-zh-CN.40868b4fd72277e34ce8.js?id=ce417dedb1255b265ed0",
+    "/js/lang-zh-CN.40868b4fd72277e34ce8.js.map": "/js/lang-zh-CN.40868b4fd72277e34ce8.js.map?id=8f3bcd4095ab1bf8b0f0",
+    "/js/lang-es.5e30578dc174e3569023.js": "/js/lang-es.5e30578dc174e3569023.js?id=d63e1c480530b6e92c0e",
+    "/js/lang-es.5e30578dc174e3569023.js.map": "/js/lang-es.5e30578dc174e3569023.js.map?id=d14651e885834a5dc117",
+    "/js/lang-en.e336425dbecff7f00b9a.js": "/js/lang-en.e336425dbecff7f00b9a.js?id=b5d485f73f5fd44476de",
+    "/js/lang-en.e336425dbecff7f00b9a.js.map": "/js/lang-en.e336425dbecff7f00b9a.js.map?id=3d75aa766fbd8e272290",
+    "/js/vendor.js": "/js/vendor.js?id=c34843f2ace6b1965baa",
+    "/js/vendor.js.map": "/js/vendor.js.map?id=a14c1ac704c477603224",
+    "/js/app.js": "/js/app.js?id=f1af9c5d6bf591e2ff51",
+    "/css/app.css": "/css/app.css?id=34239a37e3bbbeaa6f69",
+    "/js/app.js.map": "/js/app.js.map?id=0654e2da231d570b2d83",
+    "/css/app.css.map": "/css/app.css.map?id=b2d983cc42edd34a33e6",
+    "/js/manifest.js": "/js/manifest.js?id=198a89b813cb8e8ec41b",
+    "/js/manifest.js.map": "/js/manifest.js.map?id=c7021489823770685430"
 }
